@@ -1,4 +1,8 @@
+require('dotenv').config();
+
 const express = require('express')
+
+//const Youch = require('youch')
 
 const routes = require('./routes')
 
@@ -6,7 +10,7 @@ const app = express()
 
 const port = 3333
 
-app.use(express.json())
+app.use(express.json()) 
 
 app.use(routes)
 

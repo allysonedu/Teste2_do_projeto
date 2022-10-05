@@ -1,0 +1,1 @@
+const connection = require('../../../shared/database/connection');
