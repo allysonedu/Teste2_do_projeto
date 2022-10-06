@@ -1,4 +1,4 @@
-require('dotenv').config();
+ require('dotenv').config();
 
 const knexConfig = require('./src/config/database')
 

@@ -8,17 +8,17 @@ exports.seed = async function(knex) {
   await knex('table_name').insert([
     {
       id: 1, 
-      colName: 'rowValue1'
+      colName: 'admin'
     
     },
     {
       id: 2, 
-      colName: 'rowValue2'
+      colName: 'secretaria'
     
     },
     {
       id: 3, 
-      colName: 'rowValue3'
+      colName: 'financeiro'
     
     }
   ]);
