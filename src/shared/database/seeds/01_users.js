@@ -4,22 +4,39 @@
  */
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
-  await knex('table_name').del()
-  await knex('table_name').insert([
+  await knex('user').del()
+
+  await knex('user').insert([
+   {
+    name: 'Administrador',
+    email: 'allysoneduu@gmail.com',
+    password:123456,
+    whatsapp: 199999999,
+    username: 'admin',
+    type: 'admin'
+    
+   }
+  ]);
+  await knex('user').insert([
     {
-      id: 1, 
-      colName: 'admin'
+      description:'admin',
+      type: 1
     
     },
     {
-      id: 2, 
-      colName: 'secretaria'
-    
+      description: 'secretaria',
+      type: 2
     },
     {
-      id: 3, 
-      colName: 'financeiro'
-    
+      description:'financeiro',
+      type: 3
+
     }
+  ]);
+  await knex('user_permissions').insert([
+    {
+      id_user:1,
+      id_permission:1
+    },
   ]);
 };

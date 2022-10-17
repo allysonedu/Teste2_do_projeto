@@ -10,7 +10,10 @@ exports.up = function(knex) {
    table.text('password').notNullable();
    table.text('whatsapp').notNullable();
    table.text('username').notNullable();
-   table.text('id_type').notNullable();
+   table.boolean('type').notNullable();
+
+ 
+   
   })
   
 };

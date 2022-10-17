@@ -1,8 +1,13 @@
 const {Router} = require('express');
+
 const assistedRoutes = require('../../../modules/assisted_registration/infra/routes/Assisted.routes');
+
 const registrationRoutes = require('../../../modules/donation_registration/infra/routes/Registration.routes');
+
 const typeRoutes = require('../../../modules/donation_type/infra/routes/Type.routes');
+
 const familyRoutes = require('../../../modules/family_composition/infra/routes/Family.routes');
+
 const transactionsRoutes = require('../../../modules/transactions/infra/routes/transactions.routes');
 
 const usersRoutes = require('../../../modules/users/infra/routes/Users.routes')
