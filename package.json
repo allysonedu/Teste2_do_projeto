@@ -8,9 +8,11 @@
     "celebrate": "^15.0.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
     "knex": "^2.3.0",
     "pg": "^8.8.0",
-    "yarn": "^1.22.19"
+    "yarn": "^1.22.19",
+    "youch": "^3.2.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

@@ -11,6 +11,9 @@ exports.up = function(knex) {
    table.text('whatsapp').notNullable();
    table.text('username').notNullable();
    table.boolean('type').notNullable();
+   table.integer('type_user_id').unsigned();
+   table.foreign('type_user').references('id').inTable('type_users');
+  
 
  
    
